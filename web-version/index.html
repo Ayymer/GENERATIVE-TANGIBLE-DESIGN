@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generative Tangible Design - p5.js</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        h1 {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .controls {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            border: 1px solid #444;
+        }
+        
+        .controls h3 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+        
+        .key-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .key-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .key {
+            background-color: #333;
+            border: 1px solid #555;
+            border-radius: 4px;
+            padding: 4px 8px;
+            font-family: monospace;
+            font-weight: bold;
+            min-width: 30px;
+            text-align: center;
+        }
+        
+        .description {
+            color: #ccc;
+            font-size: 14px;
+        }
+        
+        #sketch-container {
+            border: 2px solid #444;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        
+        .info {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            border: 1px solid #444;
+            max-width: 600px;
+        }
+        
+        .info h3 {
+            color: #FF9800;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨 Generative Tangible Design</h1>
+    <p>Interactive generative art using p5.js - Web version of your Processing sketch</p>
+    
+    <div class="controls">
+        <h3>⌨️ Interactive Controls</h3>
+        <div class="key-list">
+            <div class="key-item">
+                <span class="key">SPACE</span>
+                <span class="description">Clear canvas (black background)</span>
+            </div>
+            <div class="key-item">
+                <span class="key">E</span>
+                <span class="description">[Function not yet implemented]</span>
+            </div>
+            <div class="key-item">
+                <span class="key">R</span>
+                <span class="description">[Function not yet implemented]</span>
+            </div>
+            <div class="key-item">
+                <span class="key">T</span>
+                <span class="description">[Function not yet implemented]</span>
+            </div>
+            <div class="key-item">
+                <span class="key">Y</span>
+                <span class="description">[Function not yet implemented]</span>
+            </div>
+            <div class="key-item">
+                <span class="key">U</span>
+                <span class="description">Generate tiled pattern</span>
+            </div>
+            <div class="key-item">
+                <span class="key">C</span>
+                <span class="description">Save current frame as PNG</span>
+            </div>
+        </div>
+    </div>
+    
+    <div id="sketch-container"></div>
+    
+    <div class="info">
+        <h3>🚀 Development Info</h3>
+        <p><strong>Canvas Size:</strong> 1000x1000 pixels</p>
+        <p><strong>Color Mode:</strong> HSB (Hue, Saturation, Brightness, Alpha)</p>
+        <p><strong>Framework:</strong> p5.js (JavaScript)</p>
+        <p><strong>Features:</strong> Image processing, generative patterns, interactive design</p>
+    </div>
+
+    <script src="sketch.js"></script>
+</body>
+</html>
